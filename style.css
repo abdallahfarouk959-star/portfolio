@@ -480,12 +480,12 @@ section{
 }
 
 .skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 3rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
     padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .skill-box {
@@ -496,7 +496,6 @@ section{
     box-shadow: 0 0 15px #111;
     transition: transform 0.3s, box-shadow 0.3s;
     min-width: 120px;
-    flex: 1 1 180px;
     max-width: 220px;
     margin: 0 auto;
 }
@@ -537,14 +536,12 @@ section{
 
 @media (max-width: 600px) {
     .skills-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 1.5rem;
+        padding: 2rem 1rem;
     }
     .skill-box {
-        width: 90%;
-        min-width: unset;
-        max-width: unset;
+        max-width: none;
         margin: 0;
     }
     .skill-icon {
@@ -985,9 +982,6 @@ span{
         display: block;
     }
     
-    .project-card {
-        width: 300px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -996,16 +990,37 @@ span{
         padding: 3rem 1rem;
     }
     
-    .project-card {
-        width: 280px;
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 2rem 0;
     }
     
-    .projects-wrapper {
-        padding: 0 1.5rem;
-        gap: 1.5rem;
+    .certificates-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 2rem 0;
     }
     
     .certificate-card {
-        max-width: 100%;
+        max-width: none;
+        min-width: auto;
+    }
+    
+    .project-card {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .certificates-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
