@@ -1,0 +1,16 @@
+{
+  "name": "Abdallah Portfolio",
+  "short_name": "Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#161616",
+  "theme_color": "#b74b4b",
+  "description": "Portfolio website for Abdallah.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
