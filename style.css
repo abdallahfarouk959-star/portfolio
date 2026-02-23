@@ -74,18 +74,19 @@ header{
 .contact {
     background: #161616;
     border-radius: 2rem;
-    margin-top: 3rem;
-    box-shadow: 0 0 25px #222;
-    padding-bottom: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 18px #222;
+    padding: 2rem 2rem;
+    min-height: auto;
 }
 
 .contact-container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    gap: 2.5rem;
-    padding: 2rem 0;
+    gap: 1.2rem 2rem;
+    padding: 1.4rem 0;
 }
 
 .contact-box {
@@ -131,6 +132,7 @@ header{
 @media (max-width: 900px) {
     .contact-container {
         gap: 1.5rem;
+        width: 50px;
     }
     .contact-box {
         min-width: 160px;
@@ -318,6 +320,7 @@ header{
     color: #bdbdbd;
     margin: 0;
     font-weight: 400;
+    font-size: xx-large;
 }
 
 @media (max-width: 900px) {
@@ -467,6 +470,35 @@ section{
     margin-bottom: 3rem;
     color: #b74b4b;
     letter-spacing: 2px;
+}
+
+/* About section */
+.about {
+    background: #161616;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 25px #222;
+    padding: 3rem 2rem 3rem;
+}
+
+.about-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    justify-content: center;
+    font-size: 2rem;
+    color: #e6e6e6;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.about-text {
+    justify-content: center;
+    font-size: 2rem;
+    color: #e6e6e6;
+    line-height: 1.8;
+    white-space: pre-line;
 }
 
 
@@ -676,19 +708,19 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Web Developer";
+        content: "Front-End Developer";
     }
     21%, 40%{
-        content: "Developer";
+        content: "Programmer";
     }
     41%, 60%{
         content: "Web Designer";
     }
     61%, 80%{
-        content: "Youtuber";
+        content: "Software Developer";
     }
-    81%, 100%{
-        content: "Script Writer";
+     81%, 100%{
+        content: "Full-Stack Developer";
     }
 }
 
@@ -1024,3 +1056,48 @@ span{
         gap: 1rem;
     }
 }
+
+.contact-icons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+
+.contact-icons .social-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.4rem;
+    height: 5.4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2.4rem;
+    border-radius: 50%;
+    color: #b74b4b;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-icons .social-link:hover{
+    background-color: #b74b4b;
+    color: #000;
+    transform: scale(1.12) translateY(-3px);
+    box-shadow: 0 0 16px #b74b4b;
+}
+
+.contact-icons .social-link .sr-only{display:none}
+
+@media (max-width: 600px){
+    .contact-icons .social-link{ width:4.6rem; height:4.6rem; font-size:1.9rem }
+    .contact-container{ gap: 1rem }
+}
+
+.site-footer{
+    padding: 2.5rem 0;
+    text-align: center;
+    color: #bdbdbd;
+    margin-top: 3rem;
+}
+.site-footer .footer-container{ max-width: 1200px; margin: 0 auto; padding: 0 2rem }

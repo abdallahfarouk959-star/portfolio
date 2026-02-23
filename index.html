@@ -17,6 +17,7 @@
             <i class="fa fa-bars"></i>
         </button>
         <nav id="main-nav">
+            <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
             <a href="#certificates">Certificates</a>
@@ -25,23 +26,25 @@
         </nav>
     </header>
     <section class="home">
-        <div class="home-img">
-        </div>
         <div class="home-content">
-            <h1>Hi, I'm <span>Abdallah M Farouk</span></h1>
+            <h1>Hi, I'm <span>Abdallah Mohamed Farouk</span></h1>
+            <br>
+            <br>
             <h3>I'm a <span>Front End Developer</span></h3>
-            <br>
-            <p>Front-End Developer focused on crafting high-performance, scalable web interfaces that deliver seamless user experiences. I specialize in turning complex designs into functional digital products with a strong emphasis on clean architecture and modern industry standards.</p>
-            <br>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/abdallah-m-farouk-8959b1300/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/abdallahfarouk959-star" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/abdallah.farouk.35110/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/abdallah_farouk_7/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+        </div>
+        <div class="home-img">
+            <img src="images/MEE.png" alt="Abdallah M Farouk">
         </div>
     </section>
     
+    <section class="about" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about-container">
+            <h3 class="about-text">I am a Junior Front-End Developer with a strong foundation in building responsive and user-friendly web interfaces. I focus on writing clean, efficient code and transforming design concepts into functional digital experiences that work seamlessly across all devices. My passion for web development drives me to continuously learn and grow, and I am eager to contribute my skills to impactful projects while collaborating with other developers and designers.</h3>
+            <h3>While I am at the early stages of my professional journey, I am deeply committed to following industry best practices and modern web standards. I thrive in collaborative environments and am always looking for opportunities to solve technical challenges and contribute to impactful projects while continuously refining my craft.</h3>
+        </div>
+    </section>
+
     <section class="skills" id="skills">
         <h2 class="section-title">My Skills</h2>
         <div class="skills-container responsive-skills">
@@ -83,7 +86,7 @@
                 <i class="fa-solid fa-graduation-cap education-icon"></i>
                 <div class="education-content">
                     <h3>Bachelor's Degree in Computer Science and Information (Currently Studying - First Year)</h3>
-                    <p><a href="https://www.eelu.edu.eg/" target="_blank" style="color: #b74b4b; text-decoration: underline;">EELU University</a></p>
+                    <p><a href="https://www.eelu.edu.eg/" target="_blank" style="color: #b74b4b; text-decoration: underline; font-size: large;">EELU University</a></p>
                 </div>
             </div>
         </div>
@@ -259,28 +262,36 @@
     <section class="contact" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact-container">
-            <div class="contact-box">
-                <i class="fa-solid fa-phone contact-icon"></i>
-                <span>Phone:</span>
-                <a href="tel:+201234567890">+20 115 022 0510</a>
-            </div>
-            <div class="contact-box">
-                <i class="fa-solid fa-envelope contact-icon"></i>
-                <span>Email:</span>
-                <a href="mailto:abdallahfarouk@gmail.com">abdallahfarouk939@gmail.com</a>
-            </div>
-            <div class="contact-box">
-                <i class="fa-brands fa-linkedin contact-icon"></i>
-                <span>LinkedIn:</span>
-                <a href="https://www.linkedin.com/in/abdallah-m-farouk-8959b1300/" target="_blank">linkedin.com/in/abdallah-farouk-8959b1300</a>
-            </div>
-            <div class="contact-box">
-                <i class="fa-brands fa-github contact-icon"></i>
-                <span>GitHub:</span>
-                <a href="https://github.com/abdallahfarouk959-star" target="_blank">github.com/abdallahfarouk959-star</a>
+            <div class="contact-icons" aria-label="social links">
+                <a class="social-link" href="https://wa.me/201150220510" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    <span class="sr-only">WhatsApp</span>
+                </a>
+                <a class="social-link" href="https://github.com/abdallahfarouk959-star" target="_blank" title="GitHub" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/abdallah-m-farouk-8959b1300/" target="_blank" title="LinkedIn" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a class="social-link" href="https://www.facebook.com/abdallah.farouk.35110/" target="_blank" title="Facebook" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a class="social-link" href="https://www.instagram.com/abdallah_farouk_7/" target="_blank" title="Instagram" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>© 2026 Abdallah M Farouk. All rights reserved.</p>
+        </div>
+    </footer>
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const nav = document.getElementById('main-nav');
@@ -318,6 +329,7 @@
 
         const translations = {
             en: {
+                about: 'About',
                 home: 'Home',
                 skills: 'Skills',
                 education: 'Education',
@@ -341,32 +353,7 @@
                 eduDegree: "Bachelor's Degree in Computer Science and Information (Currently Studying - First Year)",
                 eduUni: '<a href="https://www.eelu.edu.eg/" target="_blank" style="color: #b74b4b; text-decoration: underline;">EELU University</a>'
             },
-            ar: {
-                home: 'الرئيسية',
-                skills: 'المهارات',
-                education: 'التعليم',
-                projects: 'المشاريع',
-                certificates: 'الشهادات',
-                contact: 'التواصل',
-                langBtn: 'English',
-                skillsTitle: 'مهاراتي',
-                educationTitle: 'التعليم',
-                projectsTitle: 'مشاريعي',
-                certificatesTitle: 'شهاداتي',
-                contactTitle: 'التواصل',
-                address: 'العنوان:',
-                phone: 'رقم الهاتف:',
-                email: 'البريد الإلكتروني:',
-                linkedin: 'لينكدإن:',
-                github: 'جيت هاب:',
-                introTitle: "مرحباً، أنا <span>عبدالله</span>",
-                introRole: "أنا <span></span>",
-                introText: 'أنا مبرمج ومطور مواقع ويب، أطمح للتخصص في أحدث التقنيات. لدي شغف كبير بالتعلم والعمل الجماعي وتقديم حلول مبتكرة. ما زلت في بداية مسيرتي المهنية، وأدرس حاليًا في الجامعة، وأعمل باستمرار على تطوير مهاراتي.',
-                eduDegree: "بكالوريوس حاسبات ومعلومات (ما زلت أدرس - الفرقة الأولى)",
-                eduUni: '<a href="https://www.eelu.edu.eg/" target="_blank" style="color: #b74b4b; text-decoration: underline;">الجامعة المصرية للتعلم الإلكتروني (EELU)</a>'
-            }
-        };
-
+          };
         const langBtn = document.getElementById('lang-toggle');
         const navLinks = document.querySelectorAll('nav a');
         const sectionTitles = document.querySelectorAll('.section-title');
@@ -385,10 +372,14 @@
 
         function updateLanguage() {
 
-            navLinks[0].textContent = translations[currentLang].skills;
-            navLinks[1].textContent = translations[currentLang].education;
-            navLinks[2].textContent = translations[currentLang].experience;
-            navLinks[3].textContent = translations[currentLang].contact;
+            if(navLinks.length >= 6) {
+                navLinks[0].textContent = translations[currentLang].about;
+                navLinks[1].textContent = translations[currentLang].skills;
+                navLinks[2].textContent = translations[currentLang].education;
+                navLinks[3].textContent = translations[currentLang].certificates;
+                navLinks[4].textContent = translations[currentLang].projects;
+                navLinks[5].textContent = translations[currentLang].contact;
+            }
 
             langBtn.textContent = translations[currentLang].langBtn;
 
