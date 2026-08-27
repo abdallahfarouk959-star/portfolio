@@ -1,12 +1,6 @@
 import { motion } from 'motion/react';
 import { GraduationCap, Award } from 'lucide-react';
-
-interface Certificate {
-  title: string;
-  issuer: string;
-  link: string;
-  image: string;
-}
+import { Certificate } from '../types';
 
 const Certificates = ({ certificates }: { certificates: Certificate[] }) => {
   return (
@@ -18,8 +12,8 @@ const Certificates = ({ certificates }: { certificates: Certificate[] }) => {
             <div className="glass-card p-8 rounded-2xl mb-6">
               <GraduationCap className="text-accent mb-4" size={32} />
               <h3 className="text-xl font-bold mb-2">Bachelor's Degree</h3>
-              <p className="text-gray-400 text-sm mb-4">Computer Science and Information (1st Year)</p>
-              <a href="https://www.eelu.edu.eg/" target="_blank" className="text-accent font-bold hover:underline">EELU University</a>
+              <p className="text-gray-400 text-sm mb-4">Computer Science and Information</p>
+              <a href="https://www.eelu.edu.eg/" target="_blank" rel="noopener noreferrer" aria-label="Visit EELU University" className="text-accent font-bold hover:underline">EELU University</a>
             </div>
           </div>
           
@@ -33,13 +27,16 @@ const Certificates = ({ certificates }: { certificates: Certificate[] }) => {
                   key={cert.title}
                   href={cert.link}
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${cert.title} certificate`}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="glass-card p-6 rounded-xl flex gap-4 items-center hover:bg-white/5 transition-all group"
                 >
                   <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-white/5">
-                    <img src={cert.image} alt={cert.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                    <img src={cert.image} alt={cert.title} loading="lazy" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div>
                     <h4 className="font-bold text-sm leading-tight mb-1">{cert.title}</h4>

@@ -7,6 +7,7 @@ const About = () => (
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
         >
           <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
             <span className="w-12 h-[2px] bg-accent"></span>
@@ -23,15 +24,15 @@ const About = () => (
         
         <div className="grid grid-cols-2 gap-4">
           <div className="glass-card p-8 rounded-2xl text-center">
-            <h4 className="text-4xl font-bold text-accent mb-2">1st</h4>
-            <p className="text-xs text-gray-500 uppercase tracking-widest">Year CS Student</p>
+            <h4 className="text-4xl font-bold text-accent mb-2">🎓</h4>
+            <p className="text-xs text-gray-500 uppercase tracking-widest">CS Student</p>
           </div>
           <div className="glass-card p-8 rounded-2xl text-center">
             <h4 className="text-4xl font-bold text-accent mb-2">6+</h4>
             <p className="text-xs text-gray-500 uppercase tracking-widest">Live Projects</p>
           </div>
           <div className="glass-card p-8 rounded-2xl text-center col-span-2">
-            <h4 className="text-4xl font-bold text-accent mb-2">7+</h4>
+            <h4 className="text-4xl font-bold text-accent mb-2">6+</h4>
             <p className="text-xs text-gray-500 uppercase tracking-widest">Professional Certificates</p>
           </div>
         </div>

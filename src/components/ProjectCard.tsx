@@ -1,15 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink } from 'lucide-react';
-
-interface Project {
-  title: string;
-  desc: string;
-  fullDesc: string;
-  tech: string[];
-  link: string;
-  image: string;
-}
+import { Project } from '../types';
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -19,17 +11,19 @@ const ProjectCard = ({ project }: { project: Project }) => {
       layout
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       className="glass-card rounded-2xl overflow-hidden group"
     >
       <div className="relative h-48 overflow-hidden">
         <img 
           src={project.image} 
           alt={project.title} 
+          loading="lazy"
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-          <a href={project.link} target="_blank" className="bg-white text-black p-3 rounded-full hover:bg-accent hover:text-white transition-colors">
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="bg-white text-black p-3 rounded-full hover:bg-accent hover:text-white transition-colors">
             <ExternalLink size={20} />
           </a>
         </div>

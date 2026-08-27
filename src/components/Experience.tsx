@@ -1,6 +1,5 @@
-import React from 'react';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
-import { motion } from 'framer-motion'; // إضافة الترانزيشن اللي طلبته
+import { motion } from 'motion/react';
 
 const Experience = () => {
   const internshipDetails = {

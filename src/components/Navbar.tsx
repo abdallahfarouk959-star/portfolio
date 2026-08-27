@@ -38,7 +38,7 @@ const navLinks = [
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-white" aria-label="Toggle menu" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X /> : <Menu />}
         </button>
       </div>

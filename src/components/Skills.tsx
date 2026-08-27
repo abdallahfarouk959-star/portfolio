@@ -1,9 +1,5 @@
 import { motion } from 'motion/react';
-
-interface Skill {
-  name: string;
-  icon: any;
-}
+import { Skill } from '../types';
 
 const Skills = ({ skills }: { skills: Skill[] }) => {
   return (
@@ -16,6 +12,7 @@ const Skills = ({ skills }: { skills: Skill[] }) => {
               key={skill.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ y: -5 }}
               className="glass-card p-8 rounded-2xl flex flex-col items-center gap-4 hover:border-accent/50 transition-all"
