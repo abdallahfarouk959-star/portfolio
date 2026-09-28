@@ -23,9 +23,6 @@ const Hero = ({ image }: { image: string }) => (
           <a href="#projects" className="bg-accent hover:bg-red-600 px-8 py-3 rounded-full font-bold transition-all flex items-center gap-2">
             View Projects <ChevronRight size={18} />
           </a>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="border border-white/20 hover:border-accent px-8 py-3 rounded-full font-bold transition-all flex items-center gap-2">
-            <Download size={18} /> Download CV
-          </a>
         </div>
       </motion.div>
 
