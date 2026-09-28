@@ -1,10 +1,14 @@
 import { Certificate } from '../types';
-import certificate1 from '../assets/certificate1.png';
-import certificate2 from '../assets/certificate2.png';
-import dandrah from '../assets/Dandrah.png';
-import Front from '../assets/Developing-Front-End-Apps-with-React.png';
-import gitGithub from '../assets/git-github.png';
-import introToHtmlCssJs from '../assets/intro-to-HTMl-CSS-JS.png';
+import certificate1 from '../assets/Certeficates/Intro To Software.png';
+import certificate2 from '../assets/Certeficates/intro-to-cloud-computing.png';
+import dandrah from '../assets/Certeficates/Advanced React.png';
+import Front from '../assets/Certeficates/Developing-Front-End-Apps-with-React.png';
+import gitGithub from '../assets/Certeficates/git-github.png';
+import introToHtmlCssJs from '../assets/Certeficates/intro-to-HTMl-CSS-JS.png';
+import buildWithAI from '../assets/Certeficates/Build With AI.png';
+import hciaAI from '../assets/Certeficates/HCIA-AI V4.0 Course.png';
+import javaCert from '../assets/Certeficates/Java.png';
+import ragHackathon from '../assets/Certeficates/Rag Hackathon.png';
 
 export const CERTIFICATES: Certificate[] = [
   {
@@ -42,5 +46,29 @@ export const CERTIFICATES: Certificate[] = [
     issuer: "IBM",
     link: "https://www.coursera.org/account/accomplishments/verify/A6CLFJ48BRSA",
     image: introToHtmlCssJs,
+  },
+  {
+    title: "Build With AI",
+    issuer: "TEIC",
+    link: "#",
+    image: buildWithAI,
+  },
+  {
+    title: "HCIA-AI V4.0",
+    issuer: "Huawei",
+    link: "#",
+    image: hciaAI,
+  },
+  {
+    title: "Java",
+    issuer: "IEEE",
+    link: "#",
+    image: javaCert,
+  },
+  {
+    title: "RAG Hackathon",
+    issuer: "Instant , Cretiva",
+    link: "#",
+    image: ragHackathon,
   },
 ];

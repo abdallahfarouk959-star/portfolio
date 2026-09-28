@@ -9,7 +9,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Featured Work</h2>
             <p className="text-gray-500">
-              A selection of my recent front-end projects.
+              A selection of my recent Full-Stack projects.
             </p>
           </div>
         </div>

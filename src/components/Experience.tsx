@@ -6,7 +6,7 @@ const Experience = () => {
     role: "Front-End Development Intern",
     company: "Codveda Technologies",
     location: "Remote",
-    duration: "June 2026 – Present",
+    duration: "June 2026 – July 2026",
     milestones: [
       "Architected and deployed 'Stellaris', a monolithic production-ready Space Explorer Terminal solving 3 progressive internship levels.",
       "Engineered dynamic user interfaces utilizing React.js and TypeScript, prioritizing state persistence and modular component design.",

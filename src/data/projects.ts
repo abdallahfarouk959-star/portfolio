@@ -1,19 +1,40 @@
 import { Project } from '../types';
-import bestProject from '../assets/Best-Project.png';
-import janeDoe from '../assets/Jane-Doe.png';
-import ePlantShopping from '../assets/E-PlantShopping.png';
-import moxxApp from '../assets/NewMoxxAPP.png';
-import Stelliar from '../assets/Stellair.png';
-import InstaClone from '../assets/InstaClone.png';
+import bestProject from '../assets/Projects/Best-Project.png';
+import janeDoe from '../assets/Projects/Jane-Doe.png';
+import ePlantShopping from '../assets/Projects/E-PlantShopping.png';
+import moxxApp from '../assets/Projects/NewMoxxAPP.png';
+import Stelliar from '../assets/Projects/Stellair.png';
+import InstaClone from '../assets/Projects/InstaClone.png';
+import egyptHoliday from '../assets/Projects/Egypt Holidays Aswan.png';
 
 export const PROJECTS: Project[] = [
+  {
+    title: "Egypt Holiday Aswan – Luxury Nile Cruises & Tours",
+    desc: "A production-grade travel & cruise booking platform with multi-language support and real-time reservation dispatching.",
+    fullDesc:
+      "A commercial single-page booking application (SPA) engineered for an Egyptian luxury tourism operator. The platform features dynamic cruise cataloging, sophisticated itinerary-based date filtering, seamless multi-lingual localization (English & French via i18next), and an automated booking dispatch engine built with Express and Nodemailer. Architected for top-tier web performance, it leverages route-level code splitting (React.lazy), dynamic asset chunking, and memoized price-filtering algorithms to deliver instantaneous navigation and smooth 60FPS UI transitions on both mobile and desktop.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "Nodemailer",
+      "i18next",
+      "Framer Motion",
+      "React Datepicker",
+    ],
+    link: "https://egyptholidaysaswan.com/",
+    image: egyptHoliday,
+  },
   {
     title: "Stellaris – Space Command Terminal",
     desc: "A futuristic dynamic Space Command Terminal with fully interactive 3D Solar System.",
     fullDesc:
       "An immersive, production-grade Space Command Terminal that pushes the boundaries of web-based 3D visualization. This application integrates real-time astrophysical data via NASA APIs into a high-performance 3D Solar System built with Three.js and React-Three-Fiber. Engineered with a focus on web performance, it features custom planetary shaders, dynamic orbital mechanics, and a sophisticated WebGL architecture that ensures smooth 60FPS interactivity even during complex scene transitions.",
     tech: [
-      "React.js",
+      "React",
       "TypeScript",
       "Three.js",
       "React-Three-Fiber",
@@ -59,14 +80,5 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://abdallahfarouk959-star.github.io/Your-Name---Portfolio/",
     image: bestProject,
-  },
-  {
-    title: "Jane Doe Portfolio",
-    desc: "A responsive personal portfolio website built to showcase skills",
-    fullDesc:
-      "projects, and personal information. Focused on clean design, basic interactivity, and solid front-end fundamentals.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    link: "https://abdallahfarouk959-star.github.io/Jane-Doe---Portfolio/",
-    image: janeDoe,
   },
 ];

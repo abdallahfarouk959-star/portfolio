@@ -14,7 +14,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       viewport={{ once: true }}
       className="glass-card rounded-2xl overflow-hidden group"
     >
-      <div className="relative h-48 overflow-hidden">
+      <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative h-48 overflow-hidden block">
         <img 
           src={project.image} 
           alt={project.title} 
@@ -23,14 +23,16 @@ const ProjectCard = ({ project }: { project: Project }) => {
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="bg-white text-black p-3 rounded-full hover:bg-accent hover:text-white transition-colors">
+          <span className="bg-white text-black p-3 rounded-full hover:bg-accent hover:text-white transition-colors">
             <ExternalLink size={20} />
-          </a>
+          </span>
         </div>
-      </div>
+      </a>
       <div className="p-6">
         <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold">{project.title}</h3>
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+            <h3 className="text-xl font-bold">{project.title}</h3>
+          </a>
           <div className="flex gap-2">
             {project.tech.slice(0, 2).map(t => (
               <span key={t} className="text-[10px] uppercase tracking-wider bg-white/5 px-2 py-1 rounded border border-white/10">
