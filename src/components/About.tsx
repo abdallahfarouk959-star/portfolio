@@ -14,14 +14,13 @@ const About = () => (
             About Me
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed mb-6">
-            I am a Junior Front-End Developer with a strong foundation in building responsive and user-friendly web interfaces. 
-            I focus on writing clean, efficient code and transforming design concepts into functional digital experiences.
+            I am a Full-Stack Developer and Computer Science student focused on building high-performance, responsive web applications. I bridge the gap between design and scalable code, turning complex requirements into seamless, interactive user experiences using React, TypeScript, and modern web standards.
           </p>
           <p className="text-gray-400 text-lg leading-relaxed">
-            While I am at the early stages of my professional journey, I am deeply committed to following industry best practices and modern web standards.
+            With hands-on experience spanning interactive 3D interfaces, full-stack integrations, and client projects, I prioritize clean architecture, accessible UI, and performance optimization.
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-2 gap-4">
           <div className="glass-card p-8 rounded-2xl text-center">
             <h4 className="text-4xl font-bold text-accent mb-2">🎓</h4>
@@ -32,7 +31,7 @@ const About = () => (
             <p className="text-xs text-gray-500 uppercase tracking-widest">Live Projects</p>
           </div>
           <div className="glass-card p-8 rounded-2xl text-center col-span-2">
-            <h4 className="text-4xl font-bold text-accent mb-2">6+</h4>
+            <h4 className="text-4xl font-bold text-accent mb-2">12+</h4>
             <p className="text-xs text-gray-500 uppercase tracking-widest">Professional Certificates</p>
           </div>
         </div>
